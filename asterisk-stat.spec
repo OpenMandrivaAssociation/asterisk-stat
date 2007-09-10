@@ -5,7 +5,7 @@
 Summary:	Asterisk-Stat : CDR Analyser
 Name:		asterisk-stat
 Version:	2.0.1
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Servers
 URL:		http://areski.net/asterisk-stat-v2/about.php
@@ -68,4 +68,3 @@ rm -rf %{buildroot}%{_var}/www/html/%{name}/wiki.html
 %doc CHANGELOG.txt
 %config(noreplace) %attr(0644,root,root) %{_var}/www/html/%{name}/lib/defines.php
 %{_var}/www/html/%{name}
-
