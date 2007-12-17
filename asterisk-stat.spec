@@ -18,7 +18,6 @@ Requires:	php-gd
 Requires:	mod_php
 BuildRequires:	file
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Asterisk-Stat is providing different reports & Graph to allow
