@@ -5,7 +5,7 @@
 Summary:	Asterisk-Stat : CDR Analyser
 Name:		asterisk-stat
 Version:	2.0.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPL
 Group:		System/Servers
 URL:		http://areski.net/asterisk-stat-v2/about.php
