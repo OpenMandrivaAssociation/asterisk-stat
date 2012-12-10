@@ -2,7 +2,7 @@ Name:		asterisk-stat
 Version:	2.0.1
 Release:	%mkrel 7
 Summary:	Asterisk-Stat : CDR Analyser
-License:	GPL
+License:	GPLv2
 Group:		System/Servers
 URL:		http://areski.net/asterisk-stat-v2/about.php
 Source0:	http://areski.net/asterisk-stat-v2/%{name}-v2_0_1.tar.bz2
@@ -12,7 +12,6 @@ Requires:	php-mysql
 Requires:	php-gd
 Requires:	mod_php
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Asterisk-Stat is providing different reports & Graph to allow
@@ -44,11 +43,17 @@ rm -rf %{buildroot}%{_var}/www/html/%{name}/counter.txt
 rm -rf %{buildroot}%{_var}/www/html/%{name}/info.txt
 rm -rf %{buildroot}%{_var}/www/html/%{name}/wiki.html
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc CHANGELOG.txt
+#% {_var}/www/html/%{name}
+%{_var}/www/html/%{name}/jpgraph_lib/
+%{_var}/www/html/%{name}/images/
+%{_var}/www/html/%{name}/lib/font
+%{_var}/www/html/%{name}/css/
+%{_var}/www/html/%{name}/*.php
+%{_var}/www/html/%{name}/lib/DB-modules
+%{_var}/www/html/%{name}/lib/fpdf.php
+%{_var}/www/html/%{name}/lib/Class*.php
+%{_var}/www/html/%{name}/lib/iam*.php
+%{_var}/www/html/%{name}/*.js
 %config(noreplace) %attr(0644,root,root) %{_var}/www/html/%{name}/lib/defines.php
-%{_var}/www/html/%{name}
