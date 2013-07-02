@@ -1,7 +1,7 @@
 Name:		asterisk-stat
 Version:	2.0.1
-Release:	%mkrel 7
-Summary:	: CDR Analyser
+Release:	8
+Summary:	CDR Analyser
 License:	GPLv2
 Group:		System/Servers
 URL:		http://areski.net/asterisk-stat-v2/about.php
@@ -32,7 +32,6 @@ find . -type f | xargs chmod 644
 %build
 
 %install
-rm -rf %{buildroot}
 
 install -d %{buildroot}%{_var}/www/html/%{name}
 cp -aRf * %{buildroot}%{_var}/www/html/%{name}/
