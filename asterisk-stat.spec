@@ -1,6 +1,6 @@
 Name:		asterisk-stat
 Version:	2.0.1
-Release:	8
+Release:	9
 Summary:	CDR Analyser
 License:	GPLv2
 Group:		System/Servers
