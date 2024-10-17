@@ -4,7 +4,7 @@ Release:	9
 Summary:	CDR Analyser
 License:	GPLv2
 Group:		System/Servers
-URL:		http://areski.net/asterisk-stat-v2/about.php
+URL:		https://areski.net/asterisk-stat-v2/about.php
 Source0:	http://areski.net/asterisk-stat-v2/%{name}-v2_0_1.tar.bz2
 Patch0:		asterisk-stat-mdk_conf.diff
 Requires:	webserver
